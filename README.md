@@ -29,6 +29,24 @@ If you cloned this repo before installing LFS, you can download all LFS to prope
 git lfs pull
 ```
 
+## Platform Support
+
+You do **not** need an NVIDIA GPU (or any GPU) to build the docs or run the notebooks. The pipeline is CPU-only on the server side:
+
+- The notebook examples use [`usd-core`](https://pypi.org/project/usd-core/) (the CPU-only OpenUSD Python wheel, no Hydra/Storm GL renderer) and convert scenes to glTF with the pure-Python [`usd2gltf`](https://pypi.org/project/usd2gltf/) package.
+- The 3D scenes you see are rendered **in your browser** via the [`<model-viewer>`](https://modelviewer.dev/) web component (WebGL), not by the notebook server.
+
+This means the project runs on a normal CPU-only machine across the major desktop platforms:
+
+| Platform | Supported | Notes |
+| --- | --- | --- |
+| **Linux** (x86_64) | ✅ | Primary development platform. |
+| **macOS** (Apple Silicon & Intel) | ✅ | `usd-core` ships a universal2 wheel. |
+| **Windows** | ✅ | `usd-core` ships a `win_amd64` wheel. |
+| **WSL2** | ✅ | Behaves like Linux; open the printed URL in your Windows browser. |
+
+Requirements on any platform: **Python ≥ 3.12** and `uv`, **Git LFS** (to pull the USD/image assets), and **internet access when viewing notebooks** (the `<model-viewer>` and syntax-highlighting assets load from a CDN, so the 3D viewers won't render on a fully air-gapped machine).
+
 ## How to Build the Docs
 1. `uv run sphinx-build -M html docs/ docs/_build/`
 
@@ -49,6 +67,18 @@ The build process:
 1. `rm -rf docs/_build/`
 1. Run the [How to Build the Docs](#how-to-build-the-docs) instructions above
 1. `uv run launch_notebooks`
+
+Any extra arguments are forwarded directly to `jupyter lab`. For example, to make the server reachable from another machine on your network:
+
+```
+uv run launch_notebooks --ip=0.0.0.0
+```
+
+You can pass any other JupyterLab options the same way (e.g. `--port=8889`, `--no-browser`). If `uv` tries to interpret a flag as its own, separate the arguments with `--`:
+
+```
+uv run launch_notebooks -- --ip=0.0.0.0
+```
 
 
 
