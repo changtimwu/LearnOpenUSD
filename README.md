@@ -50,6 +50,18 @@ The build process:
 1. Run the [How to Build the Docs](#how-to-build-the-docs) instructions above
 1. `uv run launch_notebooks`
 
+Any extra arguments are forwarded directly to `jupyter lab`. For example, to make the server reachable from another machine on your network:
+
+```
+uv run launch_notebooks --ip=0.0.0.0
+```
+
+You can pass any other JupyterLab options the same way (e.g. `--port=8889`, `--no-browser`). If `uv` tries to interpret a flag as its own, separate the arguments with `--`:
+
+```
+uv run launch_notebooks -- --ip=0.0.0.0
+```
+
 
 
 ## Have an Idea for a New Example or New Content?

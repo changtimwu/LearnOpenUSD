@@ -29,7 +29,7 @@ def main() -> None:
 
     print(f"==> Launching JupyterLab at {NOTEBOOKS_DIR}...")
     subprocess.run(
-        [sys.executable, "-m", "jupyter", "lab", f"--notebook-dir={NOTEBOOKS_DIR}"],
+        [sys.executable, "-m", "jupyter", "lab", f"--notebook-dir={NOTEBOOKS_DIR}", *sys.argv[1:]],
         check=True,
     )
 
