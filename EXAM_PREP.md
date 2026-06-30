@@ -2,7 +2,7 @@
 
 A practice-driven study plan for the **NVIDIA-Certified Professional: OpenUSD Development (NCP-OpenUSD)** exam, mapping each exam domain to the [Learn OpenUSD](https://docs.nvidia.com/learn-openusd/latest/index.html) chapters and the notebook (or hands-on exercise) you should practice with.
 
-> 📝 Practice questions from the official study guide are in **[`PRACTICE_QUESTIONS.md`](./PRACTICE_QUESTIONS.md)** — use them as a timed mock exam at the end. For extra drilling, **[`PRACTICE_QUESTIONS_EXTRA.md`](./PRACTICE_QUESTIONS_EXTRA.md)** has 35 additional questions organized by the domains below (authored from the Learn OpenUSD lessons, not official).
+> 📝 Practice questions from the official study guide are in **[`PRACTICE_QUESTIONS.md`](./PRACTICE_QUESTIONS.md)** — use them as a timed mock exam at the end. For extra drilling, **[`PRACTICE_QUESTIONS_EXTRA.md`](./PRACTICE_QUESTIONS_EXTRA.md)** has 35 additional questions organized by the domains below. And for full-length rehearsal, three **70-question simulation exams** — [`SIMULATION_EXAM_1.md`](./SIMULATION_EXAM_1.md), [`2`](./SIMULATION_EXAM_2.md), [`3`](./SIMULATION_EXAM_3.md) — reproduce the real exam's length and domain mix. (All authored from the Learn OpenUSD lessons; only `PRACTICE_QUESTIONS.md` is official.)
 
 > Built from the official **NCP: OpenUSD Development Exam Study Guide v1.1.0** (`ncp-open-usd-development-study-guide.pdf`). The exam is scored across **8 weighted competency domains** — this plan is ordered **by exam weight (highest first)** so your study time tracks where the points are. The study guide also contains **sample questions (pp. 10–18) with an answer key (p. 18)** — do those last as a mock exam.
 
@@ -275,7 +275,7 @@ Notebook paths are **relative to the JupyterLab root** (`docs/_build/jupyter_exe
 1. **Re-run the 📓 notebooks for Domains 1, 4, 6, 7** without reading the prose — these test hands-on API fluency, which the exam probes hardest.
 2. **Re-trace LIVRPS** until automatic, and practice answering "why doesn't this opinion win?" (Domains 1 & 5 = 34% combined).
 3. **Drill the C++/plugin reading** for Customizing USD (Domain 8) — concepts only, given its 6% weight.
-4. **Take the [practice questions](./PRACTICE_QUESTIONS.md)** (from the study guide, pp. 10–18) as a timed mock; review every miss against its domain above.
+4. **Take the [practice questions](./PRACTICE_QUESTIONS.md)** (from the study guide, pp. 10–18) as a timed mock; review every miss against its domain above. Then sit the three full-length **70-question simulation exams** ([1](./SIMULATION_EXAM_1.md), [2](./SIMULATION_EXAM_2.md), [3](./SIMULATION_EXAM_3.md)) under timed conditions and score by domain.
 5. Keep the **[OpenUSD Cheatsheet](https://docs.nvidia.com/learn-openusd/latest/openusd-cheatsheet.html)** and **[Glossary](https://docs.nvidia.com/learn-openusd/latest/glossary.html)** open for quick reference.
 
 ### Suggested pacing (≈3 weeks)
