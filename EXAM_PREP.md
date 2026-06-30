@@ -2,7 +2,7 @@
 
 A practice-driven study plan for the **NVIDIA-Certified Professional: OpenUSD Development (NCP-OpenUSD)** exam, mapping each exam domain to the [Learn OpenUSD](https://docs.nvidia.com/learn-openusd/latest/index.html) chapters and the notebook (or hands-on exercise) you should practice with.
 
-> 📝 Practice questions from the official study guide are in **[`PRACTICE_QUESTIONS.md`](./PRACTICE_QUESTIONS.md)** — use them as a timed mock exam at the end.
+> 📝 Practice questions from the official study guide are in **[`PRACTICE_QUESTIONS.md`](./PRACTICE_QUESTIONS.md)** — use them as a timed mock exam at the end. For extra drilling, **[`PRACTICE_QUESTIONS_EXTRA.md`](./PRACTICE_QUESTIONS_EXTRA.md)** has 35 additional questions organized by the domains below (authored from the Learn OpenUSD lessons, not official).
 
 > Built from the official **NCP: OpenUSD Development Exam Study Guide v1.1.0** (`ncp-open-usd-development-study-guide.pdf`). The exam is scored across **8 weighted competency domains** — this plan is ordered **by exam weight (highest first)** so your study time tracks where the points are. The study guide also contains **sample questions (pp. 10–18) with an answer key (p. 18)** — do those last as a mock exam.
 

@@ -4,6 +4,8 @@ The 13 official sample questions from the **NCP: OpenUSD Development Exam Study 
 
 **How to use:** Answer all 13 first *without* scrolling to the [Answer Key](#answer-key). Then check yourself and re-study any domain you missed. Watch the **"Select N options"** prompts — several questions are multi-select.
 
+> ➕ Want more practice? **[`PRACTICE_QUESTIONS_EXTRA.md`](./PRACTICE_QUESTIONS_EXTRA.md)** has 35 additional questions organized by exam domain, authored from the Learn OpenUSD lessons (these 13, by contrast, are the official samples).
+
 ---
 
 ## Question 1 — Composition
